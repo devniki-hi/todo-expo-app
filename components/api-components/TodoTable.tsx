@@ -1,17 +1,14 @@
 import { Todo } from "@/types/Todo";
 import {
   ActivityIndicator,
-  ActivityIndicatorBase,
   FlatList,
   StyleSheet,
   Text,
   View,
 } from "react-native";
-import { data } from "../constants/data";
 import TodoItem from "./TodoItem";
 import { useEffect, useState } from "react";
 import { API_URL } from "@/constants/urls";
-import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 export default function TodoTable() {
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState<Todo[]>([]);
@@ -30,7 +27,7 @@ export default function TodoTable() {
 
   useEffect(() => {
     getTodos();
-  }, [data]);
+  }, []);
 
   return (
     <>
