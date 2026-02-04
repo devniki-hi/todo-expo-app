@@ -7,7 +7,7 @@ export default function TabLayout() {
         <Label>Home</Label>
         <Icon sf="house.fill" drawable="custom_android_drawable" />
       </NativeTabs.Trigger>
-      <NativeTabs.Trigger name="setting">
+      <NativeTabs.Trigger name="settings">
         <Icon sf="gear" drawable="custom_settings_drawable" />
         <Label>Settings</Label>
       </NativeTabs.Trigger>
